@@ -1,0 +1,8 @@
+{
+    "clientId": "974437528469897216",
+    "clientSecret": "",
+    "redirectURL": "https://canobal.cloudflareaccess.com/cdn-cgi/access/callback",
+    "serversToCheckRolesFor": [
+"944042498773372938"
+    ]
+}
