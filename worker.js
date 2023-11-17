@@ -134,7 +134,7 @@ app.post('/token', async (c) => {
 	const idToken = await new jose.SignJWT({
 		iss: 'https://cloudflare.com',
 		aud: config.clientId,
-		preferred_username: displayName,
+		common_name: displayName,
 		...userInfo,
 		...roleClaims,
 		email: userInfo['email'],
