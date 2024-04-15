@@ -3,6 +3,7 @@
     "clientSecret": "Ick2bV4ggRhB_CtOdiFDiIFjlbY-sfmr",
     "redirectURL": "https://canobal.cloudflareaccess.com/cdn-cgi/access/callback",
     "serversToCheckRolesFor": [
-        "944042498773372938"
+        "944042498773372938",
+        "972240026425516052"
     ]
 }
