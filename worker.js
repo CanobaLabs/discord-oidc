@@ -140,6 +140,8 @@ app.post('/token', async (c) => {
 		email: userInfo['email'],
 		global_name: userInfo['global_name'],
 		name: displayName,
+		avatar: userInfo['avatar'],
+		avatar_decoration: userInfo['avatar_decoration'],
 		guilds: servers
 	})
 		.setProtectedHeader({ alg: 'RS256' })
