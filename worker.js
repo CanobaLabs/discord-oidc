@@ -135,12 +135,12 @@ app.post('/token', async (c) => {
 		iss: 'https://cloudflare.com',
 		aud: config.clientId,
 		common_name: displayName || userInfo['name'],
+		avatar: userInfo['avatar'],
 		...userInfo,
 		...roleClaims,
 		email: userInfo['email'],
 		global_name: userInfo['global_name'],
 		name: displayName,
-		avatar: userInfo['avatar'],
 		avatar_decoration: userInfo['avatar_decoration'],
 		guilds: servers
 	})
