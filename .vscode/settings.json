@@ -1,0 +1,7 @@
+{
+    "window.title": "HQTV Discord OIDC Plugin | Canobal Labs Confidential Software | Editing ${dirty}${rootName} ~ ${activeEditorShort}",
+    "files.autoSave": "afterDelay",
+    "editor.insertSpaces": false,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.mouseWheelZoom": true
+}
