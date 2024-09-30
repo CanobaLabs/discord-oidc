@@ -103,6 +103,7 @@ app.post('/token', async (c) => {
 	}
 
 	let roleClaims = {}
+	let joinedClaims = {};
 
 	if (c.env.DISCORD_TOKEN && 'serversToCheckRolesFor' in config) {
 		await Promise.all(config.serversToCheckRolesFor.map(async guildId => {
@@ -117,6 +118,7 @@ app.post('/token', async (c) => {
 				const memberJson = await memberResp.json()
 
 				roleClaims[`roles:${guildId}`] = memberJson.roles
+				joinedClaims[`joined:${guildId}`] = memberJson.joined_at
 			}
 
 		}
@@ -138,6 +140,7 @@ app.post('/token', async (c) => {
 		avatar: userInfo['avatar'],
 		...userInfo,
 		...roleClaims,
+		...joinedClaims,
 		email: userInfo['email'],
 		global_name: userInfo['global_name'],
 		name: displayName,
